@@ -3,6 +3,7 @@ console.log('Vue Ok', Vue);
 const root = new Vue ({
     el: '#root',
     data:{
+       currentIndex : 0,
        pictures:  [
         {
           url: 'http://www.viaggiareonline.it/wp-content/uploads/2014/11/sweden_148857365.jpg',
