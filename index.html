@@ -15,7 +15,7 @@
         <div id="carousel">
             <i class="bi bi-arrow-left-square-fill" id="prev"></i>
             <div id="gallery">
-               <figure v-for="(pic, index) in pictures" :class="{'active'}" >
+               <figure v-for="(pic, index) in pictures" v-if="currentIndex==index" >
                 <img 
                 :src="pic.url" 
                 :alt="pic.title"
