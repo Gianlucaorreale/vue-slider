@@ -13,7 +13,7 @@
 <body>
     <div class="container" id="root">
         <div id="carousel">
-            <i class="bi bi-arrow-left-square-fill" id="prev"></i>
+            <i class="bi bi-arrow-left-square-fill" id="prev" v-on:click="goToPrev"></i>
             <div id="gallery">
                <figure v-for="(pic, index) in pictures" v-if="currentIndex==index" >
                 <img 
@@ -26,7 +26,7 @@
                 </figcaption>
                </figure>
             </div>
-            <i class="bi bi-arrow-right-square-fill" id="next"></i>
+            <i class="bi bi-arrow-right-square-fill" id="next" v-on:click="goToNext"></i>
             <div id="thumbnails">
                 <img class="thumb"
                 v-for="(pic, index) in pictures"
