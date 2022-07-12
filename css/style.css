@@ -5,11 +5,12 @@
     position: relative;
 }
 
-#carousel #gallery {
+#carousel .gallery {
     height: 100%;
 }
 
-#carousel #gallery img {
+
+#carousel .gallery img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -17,7 +18,22 @@
     
 }
 
-#carousel #gallery .active{
+#carousel .gallery figure{
+    height: 100%;
+    position: relative;
+}
+
+#carousel .gallery figcaption{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    left: 20px;
+    color: white;
+    text-shadow: 0 0 5px black;
+    text-align: right;
+}
+
+#carousel .gallery .active{
     display: block;
     filter: grayscale(0%);
 } 
