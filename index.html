@@ -11,14 +11,20 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="root">
         <div id="carousel">
             <i class="bi bi-arrow-left-square-fill" id="prev"></i>
             <div id="gallery" >
                
             </div>
             <i class="bi bi-arrow-right-square-fill" id="next"></i>
-            <div id="thumbnails"></div>
+            <div id="thumbnails">
+                <img class="thumb"
+                v-for="(pic, index) in pictures"
+                :src="pic.url" 
+                :alt="pic.title">
+                
+            </div>
         </div>
     </div>
  

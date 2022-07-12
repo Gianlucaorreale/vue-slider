@@ -35,3 +35,11 @@
 #next {
     left: 105%;
 }
+
+#thumbnails{
+    display: flex;
+}
+
+.thumb{
+    width: calc(100% / 5);
+}
